@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f2eb" />
+    <!-- <meta name="description" content="Фотоистории Нади: музыка, цвет и люди." /> -->
+    <title>ляляля</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="paper-grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <nav aria-label="Основная навигация">
+        <a href="#stories">истории</a><a href="#about">обо мне</a>
+      </nav>
+      <a class="hello-link" href="#contact">написать мне <span>↘</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <span class="hero-overline">ПРИВЕТ, Я НАДЯ. И Я ВСЁ ФОТКАЮ :)</span>
+        <div class="hero-copy">
+          <h1>Собираю<br />моменты <i>в кадр</i></h1>
+          <p>
+            Музыка, цветные щёки, чьи-то влюблённые взгляды — всё, от чего
+            внутри становится чуточку теплее.
+          </p>
+        </div>
+        <div class="hero-art">
+          <span class="orbit orbit-two">✳</span>
+          <img
+            src="images/me.jpg"
+            alt="Надя в рыжем свитере среди осенних листьев"
+          /><span class="art-caption">это я!</span>
+        </div>
+        <div class="hero-foot">
+          <div class="hero-foot-left">
+            <span>фото-дневник человека за камерой</span>
+            <a
+              class="round-link"
+              href="#stories"
+              aria-label="Посмотреть истории"
+              >↓</a
+            >
+          </div>
+          <span>листаем вниз ↓</span>
+        </div>
+      </section>
+
+      <section class="stories" id="stories">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">МОЯ КАМЕРА ВИДЕЛА</span>
+            <h2>ЖИЗНЬ, КАКАЯ<br /><i>ОНА ЕСТЬ</i></h2>
+          </div>
+        </div>
+        <div class="story-types" aria-label="Разные виды съёмки">
+          <span>когда громко <b>✳</b></span
+          ><span>когда ярко <b>✳</b></span
+          ><span>когда вы вдвоём <b>✳</b></span>
+        </div>
+        <div class="gallery" id="gallery" aria-label="Фотоистории"></div>
+        <div class="gallery-note">
+          <span>♡</span>
+          <p>Больше съёмок, новые кадры и закулисье — в группе с работами.</p>
+          <a
+            href="https://vk.ru/miiissshhhka"
+            target="_blank"
+            rel="noopener noreferrer"
+            >СООБЩЕСТВО НАДИ ВКОНТАКТЕ ↗</a
+          >
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-sticker">
+          <img src="images/logo.png" alt="Нарисованный портрет Нади" />
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">НЕМНОГО ПРО МЕНЯ</span>
+          <h2>рыжая.<br />любопытная.<br /><i>с камерой.</i></h2>
+          <p>
+            какой-то текст йоу, я Надечка люблю фоткать. Люблю ловить людей
+            настоящими и сохранять то, что хочется пережить ещё раз. ляляляляля
+          </p>
+        </div>
+      </section>
+
+      <section class="goodbye" id="contact">
+        <span class="eyebrow">ЛИЧНО НАДЕ · ВЫБЕРИ, ГДЕ УДОБНЕЕ</span>
+        <h2>пойдём<br /><i>фоткаться?</i></h2>
+        <div class="contact-links">
+          <a
+            class="vk-button"
+            href="https://t.me/mishka_1217"
+            target="_blank"
+            rel="noopener noreferrer"
+            >НАПИСАТЬ В TELEGRAM <span>↗</span></a
+          ><a
+            class="vk-button"
+            href="https://vk.ru/mishka_1217"
+            target="_blank"
+            rel="noopener noreferrer"
+            >НАПИСАТЬ В ЛИЧНЫЙ VK <span>↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://vk.ru/miiissshhhka"
+        target="_blank"
+        rel="noopener noreferrer"
+        >группа с работами</a
+      ><span>с теплом, надя ♡</span><a href="#top">наверх ↑</a>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Просмотр фотографии"
+      aria-hidden="true"
+    >
+      <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Закрыть просмотр"
+      >
+        ×</button
+      ><button
+        class="lightbox-prev"
+        type="button"
+        aria-label="Предыдущая фотография"
+      >
+        ←
+      </button>
+      <figure class="lightbox-figure">
+        <img src="" alt="" />
+        <figcaption>
+          <span class="lightbox-caption"></span
+          ><span class="lightbox-index"></span>
+        </figcaption>
+      </figure>
+      <button
+        class="lightbox-next"
+        type="button"
+        aria-label="Следующая фотография"
+      >
+        →</button
+      ><span class="lightbox-hint">ESC — закрыть · ← → — листать</span>
+    </div>
+  </body>
+</html>

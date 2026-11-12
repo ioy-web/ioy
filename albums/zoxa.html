@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f2eb" />
+    <meta name="description" content="Фотоальбом концерта ЗоХа в Москве." />
+    <title>ЗоХа · фотоальбом Нади</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/album.js" defer></script>
+  </head>
+  <body>
+    <div class="paper-grain" aria-hidden="true"></div>
+    <header class="topbar album-topbar">
+      <a class="album-back" href="../index.html">← <span>все истории</span></a>
+      <span class="album-signature">фото-дневник Нади</span>
+      <a class="album-vk" href="https://vk.ru/miiissshhhka" target="_blank" rel="noopener noreferrer">работы во ВКонтакте ↗</a>
+    </header>
+    <main class="album-main" data-photos="../data/zoxa.json" data-title="ЗоХа" data-place="Москва · 23 января 2026">
+      <section class="album-heading">
+        <span class="eyebrow">АРХИВ · КОНЦЕРТЫ</span>
+        <h1>ЗоХа<span>✳</span></h1>
+        <div class="album-meta"><span>Москва · 23 января 2026</span><span id="album-count">загружаем фотографии…</span></div>
+      </section>
+      <p class="album-status" id="album-status" role="status">Собираю альбом…</p>
+      <div class="album-grid" id="album-grid" aria-label="Фотографии с концерта ЗоХа в Москве"></div>
+      <a class="album-back-bottom" href="../index.html">← вернуться ко всем историям</a>
+    </main>
+    <footer class="footer album-footer">
+      <a href="../index.html">надя снимает</a>
+      <span>ЗоХа · Москва</span>
+      <a href="#top">наверх ↑</a>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографий с концерта ЗоХа" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Закрыть просмотр">×</button>
+      <button class="lightbox-prev" type="button" aria-label="Предыдущая фотография">←</button>
+      <figure class="lightbox-figure">
+        <img src="" alt="" />
+        <figcaption><span class="lightbox-caption">ЗоХа · Москва</span><span class="lightbox-index"></span></figcaption>
+      </figure>
+      <button class="lightbox-next" type="button" aria-label="Следующая фотография">→</button>
+      <span class="lightbox-hint">ESC — закрыть · ← → — листать</span>
+    </div>
+  </body>
+</html>
